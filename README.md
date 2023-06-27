@@ -19,7 +19,7 @@ O trabalho tem como foco avaliar o bom uso dos conceitos de herança e polimorfi
 
 A classe `Cofrinho` possui um atributo que representa uma coleção de moedas. Essa coleção é uma classe mãe abstrata chamada `Moedas`, que possui subclasses específicas para Dólar, Euro, Real, entre outras. A coleção de moedas pode ser implementada utilizando uma estrutura de dados como ArrayList.
 
-## Resposável
+## Responsável
 
 Aluno: Emanuel Marinho
 
