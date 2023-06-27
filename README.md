@@ -19,15 +19,11 @@ O trabalho tem como foco avaliar o bom uso dos conceitos de herança e polimorfi
 
 A classe `Cofrinho` possui um atributo que representa uma coleção de moedas. Essa coleção é uma classe mãe abstrata chamada `Moedas`, que possui subclasses específicas para Dólar, Euro, Real, entre outras. A coleção de moedas pode ser implementada utilizando uma estrutura de dados como ArrayList.
 
-## Material Utilizado
+## Resposável
 
-Recomenda-se a utilização do software Eclipse Java para a atividade prática de Linguagem de Programação.
+Aluno: Emanuel Marinho
 
-## Orientações Gerais
+## Status do projeto
 
-- O aluno deverá entregar um arquivo único no formato ZIP no ambiente virtual de aprendizagem (AVA) na seção de Trabalhos.
-- Esta atividade permite consulta e pesquisa. Portanto, é permitido ler livros, materiais complementares e buscar orientação do tutor através do Canal de Tutoria.
-- É recomendado comentar o código, explicando em suas próprias palavras o que cada trecho faz.
-- Para exportar o projeto no Eclipse Java, siga as opções adequadas em File/Export..., selecionando General/Archive File e marcando as opções indicadas.
-
+Em andamento
 
