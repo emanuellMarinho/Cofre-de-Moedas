@@ -1,6 +1,6 @@
 package entities;
 
-public class Real extends Moeda{
+public class Real extends Moeda {
 
 	@Override
 	public String info() {
