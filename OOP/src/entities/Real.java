@@ -4,14 +4,16 @@ public class Real extends Moeda {
 
 	@Override
 	public String info() {
-		// TODO Auto-generated method stub
-		return null;
+		return "Real";
 	}
 
 	@Override
 	public double converter() {
-		// TODO Auto-generated method stub
-		return 0;
+		// valor do Real no dia 10/07/2023
+		// 0,20 ->  vinte centavos de Real
+		double valorEmReal = this.valor;
+		double taxaDeConversao = 0.20;
+		double valorConvertido = valorEmReal * taxaDeConversao;
+		return valorConvertido;
 	}
-
 }

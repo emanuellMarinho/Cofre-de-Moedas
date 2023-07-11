@@ -4,14 +4,16 @@ public class Euro extends Moeda {
 
 	@Override
 	public String info() {
-		// TODO Auto-generated method stub
-		return null;
+		return "Euro";
 	}
 
 	@Override
 	public double converter() {
-		// TODO Auto-generated method stub
-		return 0;
+		// valor do Euro no dia 10/07/2023
+		// 5,39 -> 1 Euro
+		double valorEmEuro = this.valor;
+		double taxaDeConversao = 5.39;
+		double valorConvertido = valorEmEuro * taxaDeConversao;
+		return valorConvertido;
 	}
-
 }

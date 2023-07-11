@@ -2,30 +2,37 @@ package application;
 
 import java.util.ArrayList;
 import java.util.Scanner;
+import entities.Moeda;
 
 public class Cofrinho {
 
 	// Adiciona moedas ao Array
-	private ArrayList<String> listMoedas = new ArrayList<>();
+	private ArrayList<Moeda> listMoedas = new ArrayList<>();
 
 	// Adiciona moedas ao Array
-	public void adicionarMoeda(String moeda) {
+	public void adicionarMoeda(Moeda moeda) {
 		listMoedas.add(moeda);
 	}
 
 	// Remove moedas do Array
-	public void removerMoeda(String moeda) {
+	public void removerMoeda(Moeda moeda) {
 		listMoedas.remove(moeda);
 	}
 
 	// Listar moedas do Array
-	public void listarMoeda() {
-
+	public void listarMoedas() {
+		for (Moeda moeda : listMoedas) {
+			System.out.println(moeda.info());
+		}
 	}
 
 	// Calcular total convertido para Real
 	public void convertidoReal() {
-
+		double total = 0;
+		for (Moeda moeda : listMoedas) {
+			total += moeda.converter();
+		}
+		System.out.println("Total convertido para Real: " + total);
 	}
 
 	public static void main(String[] args) {
