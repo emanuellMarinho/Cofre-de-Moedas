@@ -1,45 +1,17 @@
 package application;
 
-import java.util.ArrayList;
 import java.util.Scanner;
-import entities.Moeda;
+import entities.MetodosCofrinho;
 
 public class Cofrinho {
-
-	// Adiciona moedas ao Array
-	private ArrayList<Moeda> listMoedas = new ArrayList<>();
-
-	// Adiciona moedas ao Array
-	public void adicionarMoeda(Moeda moeda) {
-		listMoedas.add(moeda);
-	}
-
-	// Remove moedas do Array
-	public void removerMoeda(Moeda moeda) {
-		listMoedas.remove(moeda);
-	}
-
-	// Listar moedas do Array
-	public void listarMoedas() {
-		for (Moeda moeda : listMoedas) {
-			System.out.println(moeda.info());
-		}
-	}
-
-	// Calcular total convertido para Real
-	public void convertidoReal() {
-		double total = 0;
-		for (Moeda moeda : listMoedas) {
-			total += moeda.converter();
-		}
-		System.out.println("Total convertido para Real: " + total);
-	}
-
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 
+		MetodosCofrinho metodos = new MetodosCofrinho();
+
 		int opcao;
 
+		System.out.println("COFRINHO:");
 		System.out.println("[1] Adicionar Moeda");
 		System.out.println("[2] Remover Moeda");
 		System.out.println("[3] Listar Moedas");
@@ -51,7 +23,14 @@ public class Cofrinho {
 		while (opcao != 0) {
 			switch (opcao) {
 			case 1:
-				// Adcionar
+				int tipoMoeda = 0;
+				while (tipoMoeda > 2 || tipoMoeda <= 3) {
+					// Adcionar
+					System.out.print("1. Real: ");
+					System.out.print("2. Dolar: ");
+					System.out.print("3. Euro: ");
+				}
+				// Tratamento dos dados
 				break;
 			case 2:
 				// Remover
