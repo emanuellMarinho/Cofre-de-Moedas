@@ -42,24 +42,24 @@ public class Cofrinho {
 					tipoMoeda = sc.nextInt();
 				
 					if (tipoMoeda == 1) {
-						System.out.println("Digite o valor:");
-						double valorReal = sc.nextDouble();
+					    System.out.println("Digite o valor:");
+					    double valorReal = sc.nextDouble();
 					    Moeda moedaReal = new Real();
 					    moedaReal.setValor(valorReal);
 					    metodos.adicionarMoeda(moedaReal);
 					    break;
 					}
 					else if (tipoMoeda == 2) {
-						System.out.println("Digite o valor:");
-						double valorDolar = sc.nextDouble();
+					    System.out.println("Digite o valor:");
+					    double valorDolar = sc.nextDouble();
 					    Moeda moedaDolar = new Dolar();
 					    moedaDolar.setValor(valorDolar);
 					    metodos.adicionarMoeda(moedaDolar);
 					    break;
 					}
 					else if (tipoMoeda == 3) {
-						System.out.println("Digite o valor:");
-						double valorEuro = sc.nextDouble();
+					    System.out.println("Digite o valor:");
+					    double valorEuro = sc.nextDouble();
 					    Moeda moedaEuro = new Euro();
 					    moedaEuro.setValor(valorEuro);
 					    metodos.adicionarMoeda(moedaEuro);
