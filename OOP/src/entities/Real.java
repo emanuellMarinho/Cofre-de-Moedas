@@ -16,4 +16,9 @@ public class Real extends Moeda {
 		double valorConvertido = valorEmReal * taxaDeConversao;
 		return valorConvertido;
 	}
+	
+	@Override
+    public void setValor(double valor) {
+        super.setValor(valor);
+    }
 }

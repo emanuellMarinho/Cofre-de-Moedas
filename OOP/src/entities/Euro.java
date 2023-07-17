@@ -16,4 +16,9 @@ public class Euro extends Moeda {
 		double valorConvertido = valorEmEuro * taxaDeConversao;
 		return valorConvertido;
 	}
+	
+	@Override
+    public void setValor(double valor) {
+        super.setValor(valor);
+    }
 }

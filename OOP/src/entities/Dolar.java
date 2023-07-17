@@ -16,4 +16,9 @@ public class Dolar extends Moeda {
 		double valorConvertido = valorEmDolar * taxaDeConversao;
 		return valorConvertido;
 	}
+	
+	@Override
+    public void setValor(double valor) {
+        super.setValor(valor);
+    }
 }
