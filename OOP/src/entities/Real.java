@@ -4,7 +4,7 @@ public class Real extends Moeda {
 
 	@Override
 	public String info() {
-		return "Real";
+		return "Real:" + this.valor;
 	}
 
 	@Override

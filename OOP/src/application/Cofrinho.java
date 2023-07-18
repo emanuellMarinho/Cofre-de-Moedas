@@ -66,16 +66,19 @@ public class Cofrinho {
 					    break;
 					}
 				}
+				break;
 			case 2:
 				// Remover
 				break;
 			case 3:
 				// Listar
+				MetodosCofrinho metodosCofrinho = new MetodosCofrinho();
+				metodosCofrinho.listarMoedas();
 				break;
 			case 4:
 				// Total para Real
 			default:
-				System.out.println("Opção Inválida");
+				System.out.println("Encerrando...");
 
 			}
 		}

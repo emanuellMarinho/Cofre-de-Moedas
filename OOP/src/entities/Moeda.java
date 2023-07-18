@@ -7,6 +7,10 @@ public abstract class Moeda {
         this.valor = valor;
     }
 	
+	public double getValor() {
+        return valor;
+    }
+	
 	protected double valor;
 	public abstract String info();
 	public abstract double converter();
