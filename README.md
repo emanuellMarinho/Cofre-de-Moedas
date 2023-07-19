@@ -25,5 +25,5 @@ Aluno: Emanuel Marinho
 
 ## Status do projeto
 
-Em andamento
+Concluído
 

@@ -4,7 +4,7 @@ public class Euro extends Moeda {
 
 	@Override
 	public String info() {
-		return "Euro";
+		return "Euro: " + this.valor;
 	}
 
 	@Override
@@ -21,4 +21,5 @@ public class Euro extends Moeda {
     public void setValor(double valor) {
         super.setValor(valor);
     }
+
 }

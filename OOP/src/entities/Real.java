@@ -4,7 +4,7 @@ public class Real extends Moeda {
 
 	@Override
 	public String info() {
-		return "Real:" + this.valor;
+		return "Real: " + this.valor;
 	}
 
 	@Override
@@ -21,4 +21,5 @@ public class Real extends Moeda {
     public void setValor(double valor) {
         super.setValor(valor);
     }
+
 }

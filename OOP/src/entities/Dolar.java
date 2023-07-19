@@ -4,7 +4,7 @@ public class Dolar extends Moeda {
 
 	@Override
 	public String info() {
-		return "Dólar";
+		return "Dólar: " + this.valor;
 	}
 
 	@Override
@@ -21,4 +21,5 @@ public class Dolar extends Moeda {
     public void setValor(double valor) {
         super.setValor(valor);
     }
+	
 }

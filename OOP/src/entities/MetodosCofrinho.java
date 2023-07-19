@@ -1,39 +1,39 @@
 package entities;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class MetodosCofrinho {
-    private List<Moeda> listMoedas;
+    public ArrayList<Moeda> listMoedas = new ArrayList<Moeda>();
 
-    // Construtor
-    public MetodosCofrinho() {
-        listMoedas = new ArrayList<>();
-    }
-
-    // Adicionar Moedas
+    // [1] Adicionar moedas ao ArrayList
     public void adicionarMoeda(Moeda moeda) {
         listMoedas.add(moeda);
     }
 
-    // Remover Moedas
+    // [2] Remover moedas do ArrayList
     public void removerMoeda(Moeda moeda) {
         listMoedas.remove(moeda);
     }
 
-    // Listar Moedas
+    // [3] Listar moedas do ArrayList
     public void listarMoedas() {
-        for (Moeda moeda : listMoedas) {
+        for (int i = 0; i < listMoedas.size(); i++) {
+            Moeda moeda = listMoedas.get(i);
             System.out.println(moeda.info());
         }
     }
 
-    // Total convertido para Real
+    // [4] Calcular total convertido para Real
     public void convertidoReal() {
         double total = 0;
         for (Moeda moeda : listMoedas) {
             total += moeda.converter();
         }
         System.out.println("Total convertido para Real: " + total);
+    }
+    
+    // Retorna lista de Moedas
+    public ArrayList<Moeda> getListMoedas() {
+        return listMoedas;
     }
 }
