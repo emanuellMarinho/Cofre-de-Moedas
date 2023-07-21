@@ -3,7 +3,7 @@ package entities;
 import java.util.ArrayList;
 
 public class MetodosCofrinho {
-    public ArrayList<Moeda> listMoedas = new ArrayList<Moeda>();
+    private ArrayList<Moeda> listMoedas = new ArrayList<Moeda>();
 
     // [1] Adicionar moedas ao ArrayList
     public void adicionarMoeda(Moeda moeda) {
